@@ -20,6 +20,7 @@ jobs:
           key: cache-3bdde62
 
       - name: prime-cache-3bdde62
+        id: prime-cache-3bdde62
         run: |
           echo "Cache hit? ${{ steps.cache-step.outputs.cache-hit }}"
           if [ "${{ steps.cache-step.outputs.cache-hit }}" != "true" ]; then
